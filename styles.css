@@ -1,0 +1,690 @@
+/***Подключение шрифтов***/
+
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('./fonts/Roboto-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'RobotoMedium';
+	src: url('./fonts/Roboto-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'RobotoItalic';
+	src: url('./fonts/Roboto-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'PhilosopherRegular';
+	src: url('./fonts/Philosopher-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'PhilosopherBold';
+	src: url('./fonts/Philosopher-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'fontawesome-webfont';
+	src: url('./fonts/fontawesome-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/***==================================================================***/
+
+/***Универсальные классы***/
+
+.titleBlock {
+	font-size: 60px;
+	color: #005c7b;
+	text-transform: uppercase;
+	font-family: 'PhilosopherBold';
+	text-align: center;
+}
+
+/***==================================================================***/
+
+/***Описание стилей шапки сайта и меню***/
+
+html, body {
+	background-color: #eeeeed;
+	min-width: 1920px;
+	width: 1920px;
+}
+
+.container {
+	max-width: 1320px !important;
+	width: 1320px !important;
+}
+
+.header {
+	margin-top: 3px;
+}
+
+.header__background {
+	background-color: #008daa;
+	padding: 29px 0 30px 0;
+	box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+	-webkit-box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+	-moz-box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+}
+
+.header__link, .header__link:visited {
+	color: #d4d0c8;
+	font-size: 24px;
+	font-family: 'RobotoRegular', sans-serif;
+	margin-left: 61px;
+}
+
+.header__link:hover, .header__social li:hover a {
+	color: #eeeeed;
+}
+
+.header__social {
+	width: 272px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-left: 82px;
+	margin-top: 6px;
+	justify-content: space-between;
+}
+
+.header__social li {
+	list-style-type: none;
+}
+
+.header__social li a {
+	color: #d4d0c8;
+	
+}
+
+.header__social li:nth-child(2) {
+	margin-left: -3px;
+}
+
+.header__social li:nth-child(3) {
+	margin-left: -2px;
+}
+
+.header__menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-right: 61px;
+	margin-left: 31px;
+	margin-top: 20px;
+}
+
+.header__menu li {
+	list-style-type: none;
+	color: #06b9c5;
+}
+
+.header__menu li i {
+	font-size: 6px;
+	color: #06b9c5;
+	vertical-align: 2px;
+}
+
+.header__menu li a, .header__menu:visited {
+	color: #06b9c5;
+	font-family: 'RobotoRegular';
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header__menu li a:hover {
+	text-decoration: none;
+	color: #eb477b;
+}
+
+.main__background {
+	height: 980px;
+	background-image: url(images/Block_one.png);
+	background-size: 900px;
+	background-repeat: no-repeat;
+	background-position-x: 265px;
+	background-position-y: 207px;
+}
+
+.main {
+	margin-top: 89px;
+	margin-right: 62px;
+	margin-left: 78px;
+}
+
+.main__title {
+	font-family: 'PhilosopherRegular';
+	color: #005c7b;
+	font-size: 55px;
+	display: flex;
+	flex-direction: column;
+}
+
+.main__title span:nth-child(2) {
+	margin-top: 45px;
+}
+
+.main__title_uppercase {
+	text-transform: uppercase;
+}
+
+.main__about {
+	font-family: 'RobotoMedium';
+	color: #005c7b;
+	font-size: 24px;
+	margin-top: 91px;
+	letter-spacing: 0.2px;
+}
+
+.main__enrol {
+	margin-top: 39px;
+	background-color: #005c7b;
+	font-size: 30px;
+	font-family: 'RobotoRegular';
+	color: #eeeeed;
+	padding: 5px 20px 9px 20px;
+	border-radius: 100px;
+	text-decoration: none;
+}
+
+.main__enrol:hover {
+	background-color: #eb477b;
+	color: #eeeeed;
+	text-decoration: none;
+}
+
+/***==================================================================***/
+
+/***Блок О курсе***/
+
+.aboutCourse__background {
+	background-color: #fff;
+}
+
+.aboutCourse {
+	padding-top: 126px;
+	padding-bottom: 192px;
+}
+
+.aboutCourse__title {
+	margin-bottom: 94px;
+}
+.aboutCourse__description_textLine {
+	font-size: 24px;
+	color: #005c7b;
+	font-family: 'RobotoRegular';
+	line-height: 30.1px;
+	margin-left: 65px;
+	margin-right: 57px;
+	text-align: justify;
+	text-align-last: center;
+}
+
+.aboutCourse__description_textLine:nth-child(2) {
+	padding-top: 4px;
+	word-spacing: 10.8px;
+	margin-bottom: 0;
+}
+
+.aboutCourse__info {
+	margin-top: 105px;
+}
+
+.aboutCourse__info_block:nth-child(1) .aboutCourse__info_pic {
+	margin-top: 6px;
+	margin-left: 36px;
+	margin-bottom: 34px;
+	width: 109px;
+	height: 98px;
+}
+
+.aboutCourse__info_block:nth-child(2) .aboutCourse__info_pic {
+	margin: 0px 9px 29px 19px;
+	width: 89px;
+	height: 113px;
+}
+
+.aboutCourse__info_block:nth-child(3) .aboutCourse__info_pic {
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
+.aboutCourse__info_title {
+	font-family: 'PhilosopherRegular';
+	font-size: 30px;
+	color: #005C7B;
+}
+
+.aboutCourse__info_block:nth-child(1) .aboutCourse__info_title {
+	padding-left: 17px;
+	padding-top: 2px;
+}
+
+.aboutCourse__info_block:nth-child(2) .aboutCourse__info_title {
+	padding-left: 20px;
+}
+.aboutCourse__info_block:nth-child(3) .aboutCourse__info_title {
+	padding-left: 5px;
+}
+
+
+.aboutCourse__info_text {
+	font-family: 'RobotoRegular';
+	font-size: 18px;
+	color: #008DAA;
+}
+
+.aboutCourse__info_block:nth-child(1) .aboutCourse__info_text {
+	line-height: 29px;
+	padding-top: 6px;
+	padding-left: 14px;
+	letter-spacing: 0.4px;
+}
+
+.aboutCourse__info_block:nth-child(2) .aboutCourse__info_text {
+	line-height: 29px;
+	padding-top: 6px;
+	padding-left: 25px;
+}
+
+.aboutCourse__info_block:nth-child(3) .aboutCourse__info_text {
+	line-height: 30px;
+	padding-top: 4px;
+	padding-left: 14px;
+}
+
+/***==================================================================***/
+
+/***Блок Преимущества***/
+
+.features {
+	height: 753px;
+	margin-top: 124px;
+	margin-bottom: 200px;
+}
+
+.features__title {
+	margin-bottom: 38px;
+}
+
+.features__list {
+	margin: 0;
+	padding: 0;
+}
+
+.features__list li {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style-type: none;
+	font-family: 'RobotoRegular';
+	font-size: 30px;
+	color: #005c7b;
+	padding-left: 33px;
+	margin-top: 25px;
+	margin-left: 35px;
+	margin-bottom: 26px;
+	align-items: baseline;
+}
+
+.features__list li i {
+	padding-right: 43px;
+}
+
+
+/***==================================================================***/
+
+/***Блок Вопросы***/
+
+.questions__background {
+	background-color: #fff;
+	height: 1080px;
+}
+
+.questions {
+	padding: 129px 7px 302px 0;
+}
+
+.questions__title {
+	margin-bottom: 10px;
+}
+
+.accordion-item {
+	border: none;
+	
+}
+
+.accordion-button {
+	flex-direction: row-reverse;
+	padding: 50px 1px 2px 117px;
+	line-height: 23.5px;
+}
+
+.accordion-button:nth-child(2) {
+	margin-top: -5px;
+}
+
+.accordion-button::after:nth-child(2) {
+	margin-top: -5px;
+
+}
+
+.accordion-button:nth-child(3) {
+	margin-top: 4px;
+}
+
+.accordion-button::after {
+	content: '\f0d7';
+	font-family: 'fontawesome-webfont';
+	font-size: 30px;
+	background-image: none;
+	align-self: flex-start;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #008daa !important;
+	background-color: #fff !important;
+	box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: none;
+	transform: none;
+	content: '\f0d8';
+	font-family: 'fontawesome-webfont';
+	font-size: 30px;
+}
+
+.accordion-button:focus {
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.accordion-header button {
+	color: #008daa;
+	font-size: 24px;
+	font-family: 'PhilosopherBold';
+}
+
+.accordion-header button span {
+	width: 100%;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+
+.accordion-header button:hover span {
+	text-decoration: underline;
+}
+
+.accordion-body {
+	font-family: 'RobotoRegular';
+	font-size: 18px;
+	word-spacing: -2px;
+	letter-spacing: 0;
+	color: #005c7b;
+	text-align: justify;
+	padding: 3px 68px 0 116px;
+	line-height: 24px;
+}
+
+.question__additional {
+	text-align: center;
+}
+
+.question__additional_title {
+	color: #008daa;
+	font-size: 36px;
+	font-family: 'PhilosopherBold';
+	margin-top: 50px;
+	margin-left: 11px;
+	margin-bottom: 30px;
+}
+
+.question__additional_anchor, .question__additional_anchor:visited {
+	color: #005C7B;
+	font-size: 36px;
+	font-family: 'PhilosopherBold';
+}
+
+.question__additional_anchor:hover {
+	color: #eb477b;
+}
+
+/***==================================================================***/
+
+/***Блок Отзывы***/
+
+.reviews__background {
+	height: 1080px;
+}
+
+.reviews__title {
+	margin: 126px auto 101px 47px;
+}
+
+.reviews__item {
+	margin: 0 auto;
+	text-align: justify;
+	align-content: center;
+}
+
+.reviews__item_content {
+	color: #005c7b;
+	font-size: 18px;
+	letter-spacing: -0.2px;
+	font-family: 'RobotoItalic';
+	text-indent: 1em;
+	line-height: 23.8px;
+	width: 81.4%;
+	margin-left: 83px;
+	margin-bottom: 12px;
+}
+
+.reviews__item_foto {
+	border-radius: 500px;
+	width: 111px;
+	text-align: center;
+	display: block;
+	margin-left: 433px;
+}
+
+.reviews__item_name {
+	font-family: 'PhilosopherRegular';
+	font-size: 30px;
+	color: #008DAA;
+	text-align: center;
+	margin: 25px -5.2px 0px 57px;
+	line-height: 29px;
+}
+
+.carousel {
+	width: 71%;
+	margin: 0 auto;
+}
+
+.carouselExampleControls {
+	position: relative;
+	width: 75%;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 65px;
+}
+
+.carousel-control-prev {
+	left: -80px;
+	bottom: 264px;
+}
+
+.carousel-control-next {
+	right: -89px;
+	bottom: 264px
+}
+.carousel-control-prev-icon {
+	background-image: url('./images/left.png');
+	width: 45px;
+	height: 45px;
+}
+
+.carousel-control-next-icon {
+	background-image: url('./images/right.png');
+	width: 45px;
+	height: 45px;
+}
+
+/***==================================================================**
+
+/***Блок Связаться с нами***/
+
+.contacts__background {
+	padding-top: 129px;
+	height: 903px;
+	background-color: #fff;
+}
+
+.contacts__title {
+	margin-bottom: 112px;
+	margin-left: -4px;
+}
+
+.contacts__site {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 90.5%;
+	margin: 0 auto;
+}
+
+.contacts__site_head {
+	font-family: 'RobotoMedium';
+	font-size: 30px;
+	color: #005c7d;
+	align-self: center;
+	padding-top: 5px;
+	padding-left: 3px;
+}
+
+.contacts__site_arrow {
+	width: 255px;
+}
+
+.contacts__site_anchor, .contacts__site_anchor:visited {
+	font-family: 'RobotoMedium';
+	font-size: 30px;
+	color: #008daa;
+	align-self: center;
+	margin-bottom: 3px;
+}
+
+.contacts__site_anchor:hover {
+	color: #eb477b;
+}
+
+.social_title {
+	margin: 96px 28px 53px 0;
+	font-family: 'RobotoMedium';
+	font-size: 30px;
+	color: #005c7d;
+}
+
+.social_menu {
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px 396px 0 auto;
+	padding-top: 4px;
+	width: 44.4%;
+}
+
+.social_menu_item a {
+	display: inline-block;
+	overflow: hidden;
+	width: 67px;
+	height: 67px;
+}
+
+.social_menu_item:nth-child(1) a {
+	background-image: url(./images/vk-blue.png);
+}
+
+.social_menu_item:nth-child(1) a:hover {
+	background-image: url(./images/vk-pink.png);
+}
+
+.social_menu_item:nth-child(2) a {
+	background-image: url(./images/fb-blue.png);
+}
+
+.social_menu_item:nth-child(2) a:hover {
+	background-image: url(./images/fb-pink.png);
+}
+
+.social_menu_item:nth-child(3) a {
+	background-image: url(./images/inst-blue.png);
+}
+
+.social_menu_item:nth-child(3) a:hover {
+	background-image: url(./images/inst-pink.png);
+}
+
+.social_menu_item:nth-child(4) a {
+	background-image: url(./images/tw-blue.png);
+}
+
+.social_menu_item:nth-child(4) a:hover {
+	background-image: url(./images/tw-pink.png);
+}
+
+.social_menu_item:nth-child(3) li {
+	padding-right: 7px;
+}
+
+/***==================================================================***/
+
+/***Блок Футер***/
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5px;
+	margin-left: 361px;
+}
+
+.footer__background {
+	background-color: #008daa;
+	height: 177px;
+	padding: 10px 0 10px 0;
+	-webkit-box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+	-moz-box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+	box-shadow: 2px 4px 5px 0px rgba(34, 60, 80, 0.4);
+}
+
+.footer_textLine {
+	font-family: 'RobotoRegular';
+	font-size: 24px;
+	color: #eeeeed;
+	margin: 0 auto;
+	line-height: 32px;
+	padding-bottom: 9px;
+	padding-right: 126px;
+}
+
+.footer_textLine:nth-child(2){
+	text-align: justify;
+	margin-top: -3px;
+}
+
+.footer__link, .footer__link:hover, .footer__link:visited {
+	font-family: 'RobotoRegular';
+	font-size: 18px;
+	color: #eeeeed;
+}
